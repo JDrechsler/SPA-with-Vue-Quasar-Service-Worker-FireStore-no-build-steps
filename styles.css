@@ -1,0 +1,96 @@
+body {
+	overscroll-behavior-y: contain;
+}
+
+hr{
+	height: 4px;
+	border-width: 0;
+	background-color: rgba(0,0,0,.08);
+}
+
+.isPaid{
+	color: green;
+	text-decoration: line-through;
+}
+
+.isNotPaid{
+	color: red;
+	font-weight: bold;
+}
+
+.isPaidStripe{
+	border-right: 3px solid green;
+}
+
+.isNotPaidStripe{
+	border-right: 3px solid red;
+}
+
+.scroll-content {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+	contain: size style layout;
+	background: linear-gradient(45deg, #6cfd9f, #6887ff);
+}
+
+.q-layout-page{
+	margin: 10px;
+}
+
+/* .ion-page>ion-content, .scroll-content {
+    background: linear-gradient(45deg, #6cfd9f, #6887ff);
+} */
+
+.q-card{
+	display: grid !important;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-areas: 'card-biller-due card-biller-image card-biller-title card-biller-price';
+	padding-right: 10px;
+	margin-bottom: 10px;
+	min-width: 250px;
+	min-height: 120px;
+	max-width: 900px;
+	width: 100%;
+	background: rgba(239, 239, 218, 0.63);
+}
+  
+.card-biller-due{
+	color: rgba(0,0,0,.54);
+	font-size: 16px;
+	grid-area: card-biller-due;
+	justify-self: center;
+	align-self: center;
+}
+
+.card-biller-image{
+	grid-area: card-biller-image;
+	justify-self: start;
+	align-self: center;
+}
+
+.card-biller-image > img{
+	width: 100px;
+}
+
+.card-biller-title{
+	font-size: 16px;
+	grid-area: card-biller-title;
+	justify-self: start;
+	align-self: center;
+}
+
+.card-biller-price{
+	font-size: 16px;
+	grid-area: card-biller-price;
+	justify-self:end;
+	align-self: center;
+}

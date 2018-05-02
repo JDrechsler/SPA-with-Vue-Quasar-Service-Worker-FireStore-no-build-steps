@@ -1,0 +1,15 @@
+{
+	"name": "Billers App",
+	"short_name": "Billers App",
+	"start_url": "index.html",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "http://icons.iconarchive.com/icons/dapino/money/256/Purse-icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"background_color": "#4e8ef7",
+	"theme_color": "#4e8ef7"
+}
